@@ -4,7 +4,6 @@ import '../App.css'
 // Importing loader
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import { useNavigate } from "react-router-dom";
-import App1 from './start';
 import StartPage from './front';
 
 const SplashScreen = () => {
@@ -34,7 +33,7 @@ return( isLoading ?
 	// If page is still loading then splash screen
 	<ClimbingBoxLoader  color={'#36D7B7'} isLoading={isLoading}
 	css={override} size={25} /> :
- <App1  shift={s}> </App1>
+ <StartPage  shift={s}> </StartPage>
 )
 
 
